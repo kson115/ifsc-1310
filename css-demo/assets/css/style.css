@@ -1,12 +1,73 @@
 /* CSS Demo stylesheet */
 
+html{
+    box-sizing: border-box;
+}
 body{
     background-color: rgb(202, 203, 152);
 }
 
 header.primary{
-    background:red;
+    background-color:#D9D350;
+    color:#ffffff;
+    text-shadow: 2px 1px #000000
+    /* long form */
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    /* single vale short hand */
+    padding: 40px;
+    /* T,R,B,L */
+    padding: 20px 40px 20px 40px;
+    /* Two values T/B, R/L */
+    padding: 20px 40px;
+    text-align: center;
 }
-body{
-    font-family:"Mulish", sans-serif ;
+
+header.primary h1{
+    font-size:2.4ram;
+    margin:20px 000;
+}
+
+header.primary h1 a {
+    color:#ffffff;
+    text-decoration:none;
+}
+
+header.primary h2{
+    font-size:1.2rem;
+    margin:0;
+}
+
+nav.primary{}                /* also works with header.primary nav{};  match up selector and source code */
+
+nav.primary ul{
+   padding:10px 0 0 0; 
+   display:flex;
+   flex-direction: row;
+   justify-content: space-around;
+}
+
+nav.primary ul li{
+   list-style-type: none;
+}
+
+nav.primary ul li a {
+    color:#ffffff;
+    text-decoration: none;           /* remove underline */
+    border:2px solid gray;        /* thickness,stroke, color; see CSS Borders at w3schools.com */
+    padding:7.5px 10px
+    border-radius: 20px;
+    background-color: rgba(0,0,0,.4);
+    transition:.4s;
+
+}
+
+nav.primary ul li a:hover {
+    background-color:rgba(0,0,0,0.4);
+}
+  body{
+    font-family: "Mulish", sans-serif;
+    margin:0;
 }

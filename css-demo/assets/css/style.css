@@ -1,7 +1,12 @@
-/*CSS Demo stylesheet*/
-
-
+/* CSS Demo stylesheet */
 
 body{
-    background-color: cadetblue;
+    background-color: rgb(202, 203, 152);
+}
+
+header.primary{
+    background:red;
+}
+body{
+    font-family:"Mulish", sans-serif ;
 }

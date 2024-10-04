@@ -1,8 +1,36 @@
 /* CSS Demo stylesheet */
 
+/*---box sizing ---*/
 html{
     box-sizing: border-box;
 }
+
+*,
+*:before,
+*:after{
+    box-sizing:inherit;
+}
+
+/*---Responsive Images ---*/
+
+img{
+    max-width:100%;
+}
+
+/*---utility class---*/
+.container{
+    width:80vw;                     /*---vw:viewport width ---*/
+    max-width:950px;
+    margin:40px auto;
+}
+
+/*--global class---*/
+body{
+    font-family: "Mulish", sans-serif;
+    margin:0;
+}
+
+
 body{
     background-color: rgb(202, 203, 152);
 }
@@ -40,7 +68,12 @@ header.primary h2{
     margin:0;
 }
 
-nav.primary{}                /* also works with header.primary nav{};  match up selector and source code */
+/*--- match up selector and source code ---*/
+nav.primary{           /* also works with header.primary nav{}*/
+    max-width:950px;
+    margin:auto;
+}    
+    
 
 nav.primary ul{
    padding:10px 0 0 0; 
@@ -67,7 +100,52 @@ nav.primary ul li a {
 nav.primary ul li a:hover {
     background-color:rgba(0,0,0,0.4);
 }
-  body{
-    font-family: "Mulish", sans-serif;
+#intro {
+    line-height:1.6;
+}
+#intro h2{
+    color:#000ff0;
+    border-bottom:1px dotted gray;
+}
+
+#content {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    gap:2ram;
+}
+
+#content article.post{
+    box-shadow:0 4px 8px rgba(0,0,0,.6);
+    padding:10px;
+    border-radius:4px;
+    font-size:8ram;
+}
+
+time.post-date, figcaption{
+    text-transform: uppercase;
+    color:#ccc;
+}
+#content a {
+    color:#3b638b;
+}
+
+#content article.post figure{
     margin:0;
+
+}
+/* ----media queries--- */
+@media screen(max-width:600px){
+
+
+
+nav.primary ul{
+    flex-direction: column; 
+    gap: 20px;
+    max-width: 250px;
+    margin: 10px auto;          /*view-word wrap*/
+
+nav.primary ul a {
+    display:block;
+}
 }

@@ -36,7 +36,9 @@ body{
 }
 
 header.primary{
-    background-color:#D9D350;
+    background-color:#D9D350;  
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3E%3Cg fill='%23172635' fill-opacity='0.4'%3E%3Cpath fill-rule='evenodd' d='M0 0h4v4H0V0zm4 4h4v4H4V4z'/%3E%3C/g%3E%3C/svg%3E");
+
     color:#ffffff;
     text-shadow: 2px 1px #000000
     /* long form */
@@ -113,6 +115,9 @@ nav.primary ul li a:hover {
     flex-direction:row;
     justify-content:space-around;
     gap:2ram;
+    border-top: 1px dotted #cccccc;
+    border-bottom: 1px dotted #cccccc;
+    padding: 2.4rem 0;
 }
 
 #content article.post{
@@ -120,6 +125,12 @@ nav.primary ul li a:hover {
     padding:10px;
     border-radius:4px;
     font-size:8ram;
+    transition:.4s;
+}
+
+#content article.post:hover{
+    box-shadow:0 8px 16px rgba(0,0,0,.6);
+   
 }
 
 time.post-date, figcaption{
@@ -134,18 +145,65 @@ time.post-date, figcaption{
     margin:0;
 
 }
+
+aside[role="complementary"]{
+    background:#172635;
+    color:#ffffff;
+    padding:40px 0;
+}
+
+aside .container{
+   display:flex;
+   flex-direction: row;
+   justify-content: space-around;
+   gap: 60px;
+}
+
+aside a{                            /*a link inside of aside*/
+    color:#ffffff;
+}
+
+aside a:last-of-type{               /*the other link outside of aside*/
+    color:#ffffff;
+    display:block;
+    margin-top:20px;
+    text-align: right;
+}
+
+aside .widget footer{
+    display:none;                     /*turns off to be invisible or color:aqua*/
+}
+
+footer#colophon{              
+    background:#3b638b;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3E%3Cg fill='%23172635' fill-opacity='0.4'%3E%3Cpath fill-rule='evenodd' d='M0 0h4v4H0V0zm4 4h4v4H4V4z'/%3E%3C/g%3E%3C/svg%3E");
+    padding:10px;
+    text-align: center;
+    color:#ffffff;
+    font-size:1.4rem;
+}
+
 /* ----media queries--- */
-@media screen(max-width:600px){
-
-
+@media screen and (max-width:600px){
 
 nav.primary ul{
     flex-direction: column; 
     gap: 20px;
     max-width: 250px;
-    margin: 10px auto;          /*view-word wrap*/
+    margin:10px auto;          /*view-word wrap*/
+}
 
 nav.primary ul a {
     display:block;
 }
+aside .container{
+    flex-direction: column;
+    gap: 60px;
+}
+}
+
+@media screen and (max-width:400px){
+    #content { 
+        flex-direction:column;        
+    }
 }

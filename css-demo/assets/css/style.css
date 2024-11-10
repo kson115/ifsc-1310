@@ -4,23 +4,21 @@
 html{
     box-sizing: border-box;
 }
-
 *,
 *:before,
 *:after{
     box-sizing:inherit;
 }
 
-/*---Responsive Images ---*/
-
+/* Responsive Images */
 img{
     max-width:100%;
 }
 
-/*---utility class---*/
+/* utility class */
 .container{
-    width:80vw;                     /*---vw:viewport width ---*/
-    max-width:950px;
+    width:80vw;                     
+    max-width:960px;
     margin:40px auto;
 }
 
@@ -48,20 +46,15 @@ img{
     border-radius: 30px 15px;
 }
 
-/*--global class---*/
+/* global styles */
 body{
-    font-family: "Mulish", sans-serif;
+    font-family: "Roboto", serif;
     margin:0;
 }
 
-body{
-    background-color: rgb(202, 203, 152);
-}
-
 header.primary{
-    background-color:#D9D350;  
-    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3E%3Cg fill='%23172635' fill-opacity='0.4'%3E%3Cpath fill-rule='evenodd' d='M0 0h4v4H0V0zm4 4h4v4H4V4z'/%3E%3C/g%3E%3C/svg%3E");
-
+    background-color:#3b638b;  
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3E%3Cg fill='%23172635' fill-opacity='0.4'%3E%3Cpath fill-rule='evenodd' d='M0 0h4v4H0V0zm4 4h4v4H4V4z'/%3E%3C/g%3E%3C/svg%3E");      /* copy from https://heropattern.com */
     color:#ffffff;
     text-shadow: 2px 1px #000000
     /* long form */
@@ -79,13 +72,13 @@ header.primary{
 }
 
 header.primary h1{
-    font-size:2.4ram;
-    margin:20px 000;
+    font-size:2.4rem;
+    margin:20px 0 0 0;
 }
 
 header.primary h1 a {
     color:#ffffff;
-    text-decoration:none;
+    text-decoration:none;    /* remove underline */
 }
 
 header.primary h2{
@@ -93,13 +86,12 @@ header.primary h2{
     margin:0;
 }
 
-/*--- match up selector and source code ---*/
-nav.primary{           /* also works with header.primary nav{}*/
+/* match up selector and source code */
+nav.primary{           /* header.primary nav{} */
     max-width:950px;
     margin:auto;
 }    
     
-
 nav.primary ul{
    padding:10px 0 0 0; 
    display:flex;
@@ -111,25 +103,25 @@ nav.primary ul li{
    list-style-type: none;
 }
 
+/* thickness/stroke/color; see CSS Borders at w3schools.com */
 nav.primary ul li a {
     color:#ffffff;
-    text-decoration: none;           /* remove underline */
-    border:2px solid gray;        /* thickness,stroke, color; see CSS Borders at w3schools.com */
-    padding:7.5px 10px
+    text-decoration: none;           
+    border:2px solid gray;        
+    padding:7.5px 10px;         
     border-radius: 20px;
     background-color: rgba(0,0,0,.4);
-    transition:.4s;
-
+    transition: 0.4s;
 }
 
 nav.primary ul li a:hover {
-    background-color:rgba(0,0,0,0.4);
+    background-color:rgba(0,0,0,0.8);
 }
 #intro {
     line-height:1.6;
 }
 #intro h2{
-    color:#000ff0;
+    color:#3b638b;
     border-bottom:1px dotted gray;
 }
 
@@ -137,7 +129,7 @@ nav.primary ul li a:hover {
     display:flex;
     flex-direction:row;
     justify-content:space-around;
-    gap:2ram;
+    gap:2rem;
     border-top: 1px dotted #cccccc;
     border-bottom: 1px dotted #cccccc;
     padding: 2.4rem 0;
@@ -147,13 +139,12 @@ nav.primary ul li a:hover {
     box-shadow:0 4px 8px rgba(0,0,0,.6);
     padding:10px;
     border-radius:4px;
-    font-size:8ram;
+    font-size:.8rem;
     transition:.4s;
 }
 
 #content article.post:hover{
-    box-shadow:0 8px 16px rgba(0,0,0,.6);
-   
+    box-shadow:0 8px 16px rgba(0,0,0,.6);   
 }
 
 time.post-date, figcaption{
@@ -184,7 +175,7 @@ time.post-date, figcaption{
 }
 
 #practice h3{
-    border-left:7px solid #3b638b;
+    border-left:7px solid #3b638b;            /* create color tab */
     padding:3.5px 10px;
 }
 
@@ -242,7 +233,7 @@ td:nth-child(n+2){
     margin:0;
 }
 
-/* adjacent sibling selector (see w3schools)*/
+/* adjacent sibling (combinator) selector (see w3schools)*/
 dd + dt{
     margin-top: 1rem;
 }
@@ -261,10 +252,8 @@ cite{
     display:block;
     text-align: right;
     font-size: .7rem;
-    margin-top: 1rem;
-    
+    margin-top: 1rem;    
 }
-
 
 aside[role="complementary"]{
     background:#172635;
@@ -279,11 +268,11 @@ aside .container{
    gap: 60px;
 }
 
-aside a{                            /*a link inside of aside*/
+aside a{                            /* a link inside of aside */
     color:#ffffff;
 }
 
-aside a:last-of-type{               /*the other link outside of aside*/
+aside a:last-of-type{               /* the other link outside of aside */
     color:#ffffff;
     display:block;
     margin-top:20px;
@@ -294,7 +283,7 @@ aside .widget footer{
     display:none;                     /*turns off to be invisible or color:aqua*/
 }
 
-footer#colophon{              
+footer#colophon.primary{              
     background:#3b638b;
     background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3E%3Cg fill='%23172635' fill-opacity='0.4'%3E%3Cpath fill-rule='evenodd' d='M0 0h4v4H0V0zm4 4h4v4H4V4z'/%3E%3C/g%3E%3C/svg%3E");
     padding:10px;
@@ -303,27 +292,26 @@ footer#colophon{
     font-size:1.4rem;
 }
 
-/* ----media queries--- */
+/* media queries */
 @media screen and (max-width:600px){
 
 nav.primary ul{
     flex-direction: column; 
-    gap: 20px;
+    gap: 10px;
     max-width: 250px;
-    margin:10px auto;          /*view-word wrap*/
+    margin:10px auto;          /* T/B:10px, L/R: auto; click menu-view-word wrap */
 }
 
 nav.primary ul a {
     display:block;
 }
+
 aside .container{
     flex-direction: column;
     gap: 60px;
 }
-}
 
-@media screen and (max-width:400px){
-    #content { 
-        flex-direction:column;        
-    }
+#content { 
+    flex-direction:column;        
+}
 }

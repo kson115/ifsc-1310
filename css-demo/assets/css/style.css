@@ -21,7 +21,6 @@ img{
     max-width:960px;
     margin:40px auto;
 }
-
 .img-right{
     float:right;
     margin:10px 0 10px 20px;
@@ -29,7 +28,6 @@ img{
     padding:5px;
     border-radius: 30px 15px;
 }
-
 .img-left{
     float:left;
     margin:10px 20px 10px 0;
@@ -37,7 +35,6 @@ img{
     padding:5px;
     border-radius: 30px 15px;
 }
-
 .img-center{
     display:block;
     margin:20px auto;
@@ -56,7 +53,7 @@ header.primary{
     background-color:#3b638b;  
     background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3E%3Cg fill='%23172635' fill-opacity='0.4'%3E%3Cpath fill-rule='evenodd' d='M0 0h4v4H0V0zm4 4h4v4H4V4z'/%3E%3C/g%3E%3C/svg%3E");      /* copy from https://heropattern.com */
     color:#ffffff;
-    text-shadow: 2px 1px #000000
+    text-shadow: 2px 1px #000000;
     /* long form */
     padding-top: 40px;
     padding-right: 40px;
@@ -70,17 +67,14 @@ header.primary{
     padding: 20px 40px;
     text-align: center;
 }
-
 header.primary h1{
     font-size:2.4rem;
     margin:20px 0 0 0;
 }
-
 header.primary h1 a {
     color:#ffffff;
     text-decoration:none;    /* remove underline */
 }
-
 header.primary h2{
     font-size:1.2rem;
     margin:0;
@@ -90,15 +84,13 @@ header.primary h2{
 nav.primary{           /* header.primary nav{} */
     max-width:950px;
     margin:auto;
-}    
-    
+}       
 nav.primary ul{
    padding:10px 0 0 0; 
    display:flex;
    flex-direction: row;
    justify-content: space-around;
 }
-
 nav.primary ul li{
    list-style-type: none;
 }
@@ -113,10 +105,10 @@ nav.primary ul li a {
     background-color: rgba(0,0,0,.4);
     transition: 0.4s;
 }
-
 nav.primary ul li a:hover {
     background-color:rgba(0,0,0,0.8);
 }
+
 #intro {
     line-height:1.6;
 }
@@ -134,7 +126,6 @@ nav.primary ul li a:hover {
     border-bottom: 1px dotted #cccccc;
     padding: 2.4rem 0;
 }
-
 #content article.post{
     box-shadow:0 4px 8px rgba(0,0,0,.6);
     padding:10px;
@@ -142,11 +133,9 @@ nav.primary ul li a:hover {
     font-size:.8rem;
     transition:.4s;
 }
-
 #content article.post:hover{
     box-shadow:0 8px 16px rgba(0,0,0,.6);   
 }
-
 time.post-date, figcaption{
     text-transform: uppercase;
     color:#ccc;
@@ -154,7 +143,6 @@ time.post-date, figcaption{
 #content a {
     color:#3b638b;
 }
-
 #content article.post figure{
     margin:0;
 }
@@ -163,17 +151,14 @@ time.post-date, figcaption{
     color:#3b638b;
     border-bottom:1px dotted #c0c0c0;
 }
-
 #practice a{
     color:#3b638b;
     transition:.4s;
 }
-
 #practice a:hover{
     text-decoration: none;
     transition:.4s;
 }
-
 #practice h3{
     border-left:7px solid #3b638b;            /* create color tab */
     padding:3.5px 10px;
@@ -192,7 +177,6 @@ caption{
 tr:nth-child(even){
     background-color:rgba(0,0,0,0.1);
 }
-
 tr:hover{
     background-color:rgba(0,0,0,0.3); 
 }
@@ -237,7 +221,6 @@ td:nth-child(n+2){
 dd + dt{
     margin-top: 1rem;
 }
-
 blockquote{
     border: 4px double #cccccc;
     border-radius: 10px 2px;
@@ -260,25 +243,21 @@ aside[role="complementary"]{
     color:#ffffff;
     padding:40px 0;
 }
-
 aside .container{
    display:flex;
    flex-direction: row;
    justify-content: space-around;
    gap: 60px;
 }
-
 aside a{                            /* a link inside of aside */
     color:#ffffff;
 }
-
 aside a:last-of-type{               /* the other link outside of aside */
     color:#ffffff;
     display:block;
     margin-top:20px;
     text-align: right;
 }
-
 aside .widget footer{
     display:none;                     /*turns off to be invisible or color:aqua*/
 }

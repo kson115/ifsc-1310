@@ -1,3 +1,8 @@
 body{
     background-color: rgba(73, 235, 214, 0.312);
 }
+h2{ 
+    margin-top: 70px;
+    border-bottom: 1px solid gray;
+    padding-bottom: 5px;
+}

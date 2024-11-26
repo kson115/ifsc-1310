@@ -6,26 +6,12 @@ html{
 *:after{
     box-sizing:inherit;
 }
-
 .container{
     width:80vw;
     margin:40px auto;
     max-width:900px;
 }
-.img-right{
-    float:right;
-    margin:10px 0 10px 20px;
-    border:1px solid #ccc;
-    padding:5px;
-    border-radius: 30px 15px;
-}
-.img-left{
-    float:left;
-    margin:10px 20px 10px 0;
-    border:1px solid #ccc;
-    padding:5px;
-    border-radius: 30px 15px;
-}
+
 .img-center{
     display:block;
     margin:20px auto;
@@ -33,7 +19,6 @@ html{
     padding:5px;
     border-radius: 30px 15px;
 }
-
 img{
     max-width:100%;
     height:auto;
@@ -83,10 +68,9 @@ header.primary h1 a {
 header.primary h2{
     font-family: "Inter", sans-serif;
     font-size:2em;
-    margin: 10px auto 20px;
-    position:relative;
-}
-        
+    margin: 10px auto 32px;
+    position:relative;   
+}     
 nav.primary ul{
    padding:0; 
    display:flex;
@@ -113,12 +97,38 @@ nav.primary ul li a {
 nav.primary ul li a:hover {
     background-color:rgba(0,0,0,0.8);
 }
+#content h2, #articles h2{
+    flex:0 0 100%;
+    text-align: center;
+}
 
+#articles .container {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #c0c0c0;
+    padding: 0 0 4em 0;    
+}
+#articles article.post{
+    width:31%;
+    padding:10px;
+    font-size: .8em;
+    border-radius: 10px;
+    background:#fff;
+    box-shadow:0 4px 8px rgba(6, 79, 79, 0.6);
+    transition: .4s;
+}
 
+#starlink{
+    padding:2em 0;
+}
 
-
-
-
+aside[role="complementary"]{
+    background:#e7eee4;
+    color:#000;
+    padding:40px 0;
+}
 
 table{
     width:100%;

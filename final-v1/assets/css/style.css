@@ -102,7 +102,7 @@ nav.primary ul li a:hover {
     text-align: center;
 }
 
-#articles .container {
+div.container {
     display:flex;
     flex-direction: row;
     justify-content: space-around;
@@ -110,7 +110,7 @@ nav.primary ul li a:hover {
     border-bottom: 1px solid #c0c0c0;
     padding: 0 0 4em 0;    
 }
-#articles article.post{
+article.post{
     width:31%;
     padding:10px;
     font-size: .8em;

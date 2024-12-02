@@ -181,6 +181,7 @@ figcaption{
 aside article a:hover,
 aside, article a:active{
     text-decoration: none;
+    color:#e12525;
 } 
 .history p{
     color: #053a41;

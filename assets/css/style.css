@@ -1,8 +1,10 @@
 body{
     background-color: rgba(73, 235, 214, 0.312);
+    margin:40px 60px 70px 60px;
 }
 h2{ 
     margin-top: 50px;
     border-bottom: 1px solid gray;
     padding-bottom: 5px;
 }
+
